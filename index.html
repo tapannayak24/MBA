@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCM - Transform Your Career with our Industry-Driven MBA</title>
+    <style>
+        :root {
+            --primary: #FB8500;
+            --white: #FDFDFD;
+            --light-gray: #f5f5f5;
+            --dark-gray: #333333;
+            --medium-gray: #666666;
+             --light: #fdfdfd;
+             --secondary: #e67700;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        html {
+        scroll-behavior: smooth;
+      }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+  
+        
+
+        header {
+    background: var(--light);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    color: var(--light);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--primary);
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .cta-button-two {
+    display: inline-block;
+    background: var(--primary);
+    color: white !important;
+    padding: 5px 15px 7px 15px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    /* transition: all 0.3s ease; */
+  }
+
+  .cta-button-two:hover {
+    /* transform: translateY(-3px); */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: var(--primary) !important;
+    border: 2px  solid var(--primary);
+    padding: 0px 14px 0px 14px;
+  }
+
+  .cta-button-two::after {
+    content: none !important;
+  }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/mba-banner.png') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            /* margin-top: 70px; */
+        }
+        
+        .hero-content {
+            max-width: 650px;
+            padding: 20px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: var(--primary);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 2px solid var(--primary);
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary);
+        }
+        
+        .secondary-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 2px solid var(--white);
+            margin-left: 15px;
+        }
+        
+        .secondary-button:hover {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .section-title p {
+            color: var(--medium-gray);
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            width: 100%;
+            height: 200px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: var(--primary);
+        }
+        
+        .feature-icon img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .feature-content {
+            padding: 25px;
+        }
+        
+        .feature-content h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+        
+        .feature-content p {
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+        }
+        
+        /* Program Highlights */
+        .program-highlights {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .highlights-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        
+        .highlight-box {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 30px;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px var(--shadow);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .highlight-box:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .highlight-icon {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .highlight-icon img {
+            max-width: 80px;
+            height: auto;
+        }
+        
+        .highlight-box h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+        }
+        
+        .highlight-box p {
+            color: var(--medium-gray);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 50px auto 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .testimonial-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .testimonial-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 3px solid var(--primary);
+        }
+        
+        .testimonial-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-text {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--medium-gray);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text:before {
+            content: '\201C';
+            font-size: 60px;
+            color: var(--primary);
+            position: absolute;
+            left: -30px;
+            top: -20px;
+            opacity: 0.5;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+        
+        .testimonial-position {
+            color: var(--primary);
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        /* Statistics */
+        .statistics {
+            padding: 80px 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+            background-size: cover;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .stat-box {
+            flex-basis: 200px;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+        }
+        
+        .cta-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: var(--medium-gray);
+        }
+        
+        /* Application Form */
+        .application-form {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow);
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark-gray);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: var(--dark-gray);
+            background-color: var(--white);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(251, 133, 0, 0.2);
+        }
+        
+        .form-submit {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        .form-submit:hover {
+            background-color: #e67800;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-column {
+            flex-basis: calc(25% - 30px);
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+        
+        .footer-column p,
+        .footer-column a {
+            color: #aaa;
+            margin-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-right: 10px;
+            color: var(--white) !important;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary);
+            color: var(--white) !important;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+        }
+        
+        /* Responsive */
+        @media screen and (max-width: 992px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .highlight-box {
+                flex-basis: calc(50% - 20px);
+            }
+            
+            .footer-column {
+                flex-basis: calc(50% - 30px);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .header-container {
+                position: relative;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px var(--shadow);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 0 0 15px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .highlight-box {
+                flex-basis: 100%;
+            }
+            
+            .cta-button, .secondary-button {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+            
+            .stat-box {
+                flex-basis: 150px;
+            }
+
+            .feature-content {
+                padding: 25px;
+                margin-top: 130px;
+                        }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .footer-column {
+                flex-basis: 100%;
+            }
+            
+            .stat-box {
+                flex-basis: 100%;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .feature-content h3,
+            .highlight-box h3 {
+                font-size: 18px;
+            }
+            
+            .cta-content h2 {
+                font-size: 28px;
+            }
+
+            .feature-content {
+                padding: 25px;
+                margin-top: 60px;
+                        }
+        }
+        
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animated {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+        
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
+        
+        .delay-4 {
+            animation-delay: 0.8s;
+        }
+
+        .form-button {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+
+      /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    padding: 60px 0 20px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+  }
+
+  .footer-col h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: var(--primary);
+  }
+
+  .footer-col p {
+    margin-bottom: 15px;
+    color: #aaa;
+  }
+
+  .footer-links {
+    list-style: none;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: var(--primary);
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #aaa;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+
+  .logos {
+    text-decoration: none;
+    scroll-behavior: smooth !important;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Menu overlay styles */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 90;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+   /* Responsive Design */
+  @media screen and (max-width: 992px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .nav-links {
+      display: none;
+    }
+
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 578px) {
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 250px;
+      height: 100vh;
+      background-color: white;
+      flex-direction: column;
+      padding: 80px 20px 20px;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 100;
+    }
+
+    .nav-links.active {
+      right: 0;
+    }
+
+    .hamburger-menu {
+      display: block;
+      position: relative;
+      z-index: 200;
+    }
+
+    /* Transform hamburger into X when active */
+    .hamburger-menu.active .bar1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger-menu.active .bar2 {
+      opacity: 0;
+    }
+
+    .hamburger-menu.active .bar3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+
+
+  .section-subtitle {
+        color: var(--primary) !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+      }
+
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="navbar">
+            <a class="logos" href="#">
+              <div class="logo">
+                <div class="logo-icon">R</div>
+                <div class="logo-text">RCM Institute</div>
+              </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+              <a href="#features">Program Benefits</a>
+              <a href="#highlights">Highlights</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#contact">Contact</a>
+              <a href="#apply" class="cta-button-two">Apply Now</a>
+            </div>
+            <div class="hamburger-menu" id="hamburgerMenu">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Added overlay element -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content animated">
+                    
+                <h1>Master the Future of Business with Our<span> Cutting-Edge MBA</span></h1>
+                <p>Unlock global opportunities with expert mentorship, hands-on learning, and a network of high achievers. Elevate your career with an MBA designed for visionaries like you.</p>
+                <div>
+                    <a href="#apply" class="cta-button">Apply Now - Limited Seats!</a>
+                    <a href="#highlights" class="secondary-button">Explore Program</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title animated">
+                <p class="section-subtitle">Why Choose Us</p>
+                <h2>Program Benefits</h2>
+                <p>Our MBA program offers unparalleled advantages designed to accelerate your career growth and personal development</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card animated delay-1">
+                    <div class="feature-icon">
+                        <img src="images/Multiple Specializations.jpg" alt="Specializations">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Multiple Specializations</h3>
+                        <p>Choose from in-demand specializations including Finance, Marketing, HR, and Business Analytics tailored to industry needs.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card animated delay-2">
+                    <div class="feature-icon">
+                        <img src="images/Learn from Industry Leaders.jpg" alt="Industry Leaders">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Learn from Industry Leaders</h3>
+                        <p>Get mentored by experienced executives and global experts who bring real-world insights into the classroom.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card animated delay-3">
+                    <div class="feature-icon">
+                        <img src="images/Placement Assistance.jpg" alt="Placement">
+                    </div>
+                    <div class="feature-content">
+                        <h3>100% Placement Assistance</h3>
+                        <p>Our dedicated placement cell ensures you get opportunities with top recruiters and Fortune 500 companies.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card animated delay-1">
+                    <div class="feature-icon">
+                        <img src="images/International Exposure.jpg" alt="Global Exposure">
+                    </div>
+                    <div class="feature-content">
+                        <h3>International Exposure</h3>
+                        <p>Expand your horizons with international study tours, exchange programs, and global networking opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card animated delay-2">
+                    <div class="feature-icon">
+                        <img src="images/Hands-on Learning.jpg" alt="Hands-on Learning">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Hands-on Learning</h3>
+                        <p>Apply your knowledge through case studies, live projects, and industry collaborations for practical experience.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card animated delay-3">
+                    <div class="feature-icon">
+                        <img src="images/Research Opportunities.jpg" alt="Research">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Research Opportunities</h3>
+                        <p>Work alongside faculty on cutting-edge business research and publish in reputed journals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Highlights -->
+    <section class="program-highlights" id="highlights">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Program Highlights</h2>
+                <p>Experience the Difference: An MBA That Redefines Success</p>
+            </div>
+
+            <div class="highlights-container">
+                <div class="highlight-box animated delay-1">
+                    <div class="highlight-icon">
+                        <!-- <img src="IMAGES/Industry Mentorship.jpg" alt="Industry Mentorship"> -->
+                        🧑‍🏫
+                    </div>
+                    <h3>Industry Mentorship</h3>
+                    <p>One-on-one guidance from industry leaders who help shape your career path and provide networking opportunities.</p>
+                </div>
+
+                <div class="highlight-box animated delay-2">
+                    <div class="highlight-icon">
+                        🌍
+                    </div>
+                    <h3>Global Networking</h3>
+                    <p>Connect with industry professionals, alumni, and peers from around the world to build valuable relationships.</p>
+                </div>
+
+                <div class="highlight-box animated delay-3">
+                    <div class="highlight-icon">
+                        🏢
+                    </div>
+                    <h3>Corporate Internships</h3>
+                    <p>Gain real-world experience through paid internships with leading companies in your field of interest.</p>
+                </div>
+
+                <div class="highlight-box animated delay-1">
+                    <div class="highlight-icon">
+                        🏫
+                    </div>
+                    <h3>State-of-the-art Campus</h3>
+                    <p>Modern facilities including smart classrooms, business labs, innovation center, and recreation amenities.</p>
+                </div>
+
+                <div class="highlight-box animated delay-2">
+                    <div class="highlight-icon">
+                        🎓
+                    </div>
+                    <h3>Leadership Development</h3>
+                    <p>Structured personality development and leadership programs to hone your soft skills and management abilities.</p>
+                </div>
+
+                <div class="highlight-box animated delay-3">
+                    <div class="highlight-icon">
+                        💻
+                    </div>
+                    <h3>Industry-Driven Curriculum</h3>
+                    <p>Regularly updated syllabus designed in consultation with industry experts to match current market demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Success Stories</h2>
+                <p>Hear from our alumni about how RCM's MBA transformed their careers</p>
+            </div>
+
+            <div class="testimonial-slider animated delay-1">
+                <div class="testimonial-slide">
+                    <div class="testimonial-image">
+                        <img src="images/boy.png" alt="Testimonial">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">The MBA program at RCM completely transformed my career trajectory. The industry connections and practical knowledge I gained helped me secure a leadership role at a Fortune 500 company within months of graduation.</p>
+                        <h4 class="testimonial-author">Rahul Sharma</h4>
+                        <p class="testimonial-position">Marketing Director, Tech Solutions Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Our Impact in Numbers</h2>
+                <p>The RCM advantage reflected in our impressive statistics</p>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-box animated delay-1">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-text">Placement Record</div>
+                </div>
+
+                <div class="stat-box animated delay-2">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-text">Corporate Partners</div>
+                </div>
+
+                <div class="stat-box animated delay-3">
+                    <div class="stat-number">₹12L</div>
+                    <div class="stat-text">Average Package</div>
+                </div>
+
+                <div class="stat-box animated delay-4">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-text">Global Tie-ups</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content animated">
+                <h2>Ready to Take Your Career to New Heights?</h2>
+                <p>Don't miss this opportunity to join a transformative MBA program that will open doors to incredible career opportunities.</p>
+                <a href="#apply" class="cta-button">Apply Now - Limited Seats Available!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form" id="apply">
+        <div class="container">
+            <div class="section-title animated">
+                <h2>Start Your Application</h2>
+                <p>Fill out this form to begin your journey towards career excellence</p>
+            </div>
+
+            <div class="form-container animated delay-1">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Mobile Number*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qualification">Highest Qualification*</label>
+                        <select id="qualification" name="qualification" required>
+                            <option value="">Select your qualification</option>
+                            <option value="bachelors">Bachelor's Degree</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qualification">Preferred Specialization*</label>
+                        <select id="qualification" name="qualification" required>
+                            <option value="">Select specialization</option>
+                            <option value="ai">Marketing</option>
+                            <option value="cyber">Finance</option>
+                            <option value="data">Human Resources</option>
+                            <option value="cloud">Operations & Supply Chain Management</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="form-button">
+                        Secure Your Spot Now!
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Footer HTML -->
+
+            <footer id="contact">
+                <div class="container">
+                  <div class="footer-container">
+                    <div class="footer-col">
+                      <h3>About RCM Institute</h3>
+                      <p>
+                        We are a premier technical institute committed to shaping the
+                        future tech leaders through cutting-edge education, industry
+                        partnerships, and practical learning experiences.
+                      </p>
+                      <p>
+                        Established in 2005, we have successfully placed thousands of
+                        students in leading tech companies worldwide.
+                      </p>
+                    </div>
+                    <div class="footer-col">
+                      <h3>Quick Links</h3>
+                      <ul class="footer-links">
+                        <li><a href="#features">Program Benefits</a></li>
+                        <li><a href="#highlights">Program Highlights</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#apply">Apply Now</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-col">
+                      <h3>Programs</h3>
+                      <ul class="footer-links">
+                        <li><a href="#">MBA in IT</a></li>
+                        <li><a href="#">MCA Program</a></li>
+                        <li><a href="#">BTech Programs</a></li>
+                        <li><a href="#">Short Courses</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-col">
+                      <h3>Contact Us</h3>
+                      <div class="contact-info">
+                        <span>📱</span>
+                        <p>+91 98765 43210</p>
+                      </div>
+                      <div class="contact-info">
+                        <span>📧</span>
+                        <p>admissions@rcm.edu</p>
+                      </div>
+                      <div class="contact-info">
+                        <span>📍</span>
+                        <p>RCM Campus, IT Park Road, Bhubaneswar</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="copyright">
+                    <p>&copy; 2025 RCM Institute. All Rights Reserved.</p>
+                  </div>
+                </div>
+              </footer>
+
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const hamburgerMenu = document.getElementById("hamburgerMenu");
+                  const navLinks = document.getElementById("navLinks");
+                  const menuOverlay = document.getElementById("menuOverlay");
+          
+                  // Toggle menu when hamburger is clicked
+                  hamburgerMenu.addEventListener("click", function () {
+                    navLinks.classList.toggle("active");
+                    hamburgerMenu.classList.toggle("active");
+                    menuOverlay.classList.toggle("active");
+          
+                    // Prevent body scrolling when menu is open
+                    if (navLinks.classList.contains("active")) {
+                      document.body.style.overflow = "hidden";
+                    } else {
+                      document.body.style.overflow = "";
+                    }
+                  });
+          
+                  // Close menu when clicking a nav link
+                  const links = navLinks.querySelectorAll("a");
+                  links.forEach((link) => {
+                    link.addEventListener("click", function () {
+                      navLinks.classList.remove("active");
+                      hamburgerMenu.classList.remove("active");
+                      menuOverlay.classList.remove("active");
+                      document.body.style.overflow = "";
+                    });
+                  });
+          
+                  // Close menu when clicking on the overlay
+                  menuOverlay.addEventListener("click", function () {
+                    navLinks.classList.remove("active");
+                    hamburgerMenu.classList.remove("active");
+                    menuOverlay.classList.remove("active");
+                    document.body.style.overflow = "";
+                  });
+          
+                  // Handle escape key to close menu
+                  document.addEventListener("keydown", function (event) {
+                    if (event.key === "Escape" && navLinks.classList.contains("active")) {
+                      navLinks.classList.remove("active");
+                      hamburgerMenu.classList.remove("active");
+                      menuOverlay.classList.remove("active");
+                      document.body.style.overflow = "";
+                    }
+                  });
+                });
+              </script>
+            </body>
+          </html>
+          
